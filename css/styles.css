@@ -1,0 +1,427 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    line-height:1.6;
+}
+
+.menu-container {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menu-container img {
+    display: none;
+}
+
+.menu-container a {
+    line-height: 100px;
+    color:#148efa;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 5px;
+
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.navbar ul {
+    line-height: 10px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    text-transform: uppercase;
+
+}
+.navbar ul a:hover {
+    cursor: pointer;
+    color: #148efa;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 0 10px;
+}
+.info-usuario {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    width: 100%;
+    margin-top: 100px;
+}
+.info-usuario section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info-usuario iframe {
+   width: 1000px;
+   height: 600px;
+}
+.mi-mapa {
+    width: 100%;
+
+}
+.mi-mapa iframe {
+    width: 100%;
+}
+.contenedor-producto {
+    text-transform: uppercase;
+    margin-top: 20px;
+    max-width: 70%;
+    width: 100%;
+    height: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.catalogo-herramientas img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 400px;
+}
+.contenedor-producto .catalogo-herramientas {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2 ,1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.comprar-item {
+    cursor: pointer;
+}
+.elemento-1{
+    background-color: lightblue;
+    text-align: center;
+    font-size: 20px;
+
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+}
+.elemento-2{
+    text-align: center;
+    font-size: 20px;
+    background-color: lightblue;
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+.elemento-3{
+    text-align: center;
+    font-size: 20px;
+    background-color: lightblue;
+
+    grid-row: 1/2;
+    grid-column: 3/4;
+
+}
+.elemento-4{
+    text-align: center;
+    font-size: 20px;
+    background-color: lightblue;
+
+
+}
+.elemento-5 {
+    text-align: center;
+    font-size: 20px;
+    background-color: lightblue;
+
+}
+.elemento-6{
+    text-align: center;
+    font-size: 20px;
+    background-color: lightblue;
+
+}
+.contenedor-productor .catalogo-herramientas article img {
+    width: 400px;
+    height: 400px;
+}
+.formulario {
+    text-transform: uppercase;
+    font-size: 20px;
+    height: 350px;
+    margin-top: 20px;
+    max-width: 40%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.consulta-cliente {
+    height: 150px;
+}
+input[type=submit] {
+    background-color: lightblue;
+
+    text-transform: uppercase;
+    margin-top: 12px;
+}
+.formulario form input {
+    box-sizing: border-box;
+    padding:8px 0;
+    width: 100%;
+    border-radius: 4px;
+}
+.formulario form { 
+    height: 100%;
+}
+.infomracion-contacto {
+    height: 130px;
+    text-transform: uppercase;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    background-color: lightblue;
+    margin-top: 50px;
+}
+.infomracion-contacto  form ul li a img {
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.infomracion-contacto  form ul li{
+    list-style-type: none;
+}
+.infomracion-contacto form ul {
+    display: flex;
+    flex-direction: row;
+
+}
+.seccion-reseñas {
+    margin-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    width: 100%;
+    height: 400px;
+}
+.seccion-reseñas section article {
+    padding: 10px 12px;
+    border-radius: 4px;
+    width: 300px;
+    height: 300px;
+}
+.reseña-usuario {
+    height: 100%;
+    background-color: lightblue;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+@media (max-width:900px){
+    .seccion-reseñas {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 1200px;
+    }
+    .reseña-usuario  {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+    .reseña-usuario article {
+        width: 350px;
+    }
+    .info-usuario {
+        max-width: 90%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .info-usuario section p iframe {
+        max-width: 100%;
+        width: 100%;
+    }
+    .formulario {
+        height: 500px;
+        margin-top: 30px;
+    }
+    .formulario form {
+        height: 100%;
+    }
+    .infomracion-contacto {
+
+        height: 300px;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .catalogo-herramientas img {
+        width: 400px;
+        height: 400px;
+    }
+    .contenedor-producto {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+        width: 100%;
+        height: 1600px;
+    }
+ 
+    .catalogo-herramientas {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    .elemento-1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .elemento-2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .elemento-3 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .elemento-4 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .elemento-5 {
+        grid-column: 1/2;
+        grid: 3/4;
+    }
+    .elemento-6 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+   
+    
+    
+    .navbar  {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      display: none;
+    }
+     .menu-container img {
+        cursor: pointer;
+        color: #fff;
+        display: initial;
+        width:80px;
+        margin: 15px 0;
+    }
+    .menu-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar ul li:hover{
+        border-bottom: 1px solid #fff;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+        background-color: lightblue;
+
+    }
+  
+}
+
+@media (max-width:758px) {
+    .contenedor-producto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 90%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 3300px;
+    }
+    .catalogo-herramientas {
+        column-gap: 0%;
+        display: grid;
+        grid-template-columns:repeat (1 , 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .catalogo-herramientas article {
+        width: 100vw;
+    }
+    .elemento-1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+    }
+    .elemento-2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        
+    }
+    .elemento-3 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .elemento-4 {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .elemento-5 {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    .elemento-6 {
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    .info-usuario {
+        max-width: 90%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .info-usuario section {
+        max-width: 100%;
+        width: 100%;
+
+    }
+    .info-usuario section p iframe {
+        max-width: 100%;
+        width: 100%;
+    }
+    .formulario {
+        max-width: 90%;
+        width: 100%;
+    }
+    .formulario form label, input {
+        max-width: 100%;
+        width: 100%;
+    }
+    .reseña-usuario{
+        width: 100vw;
+    }
+   
+   
+}
